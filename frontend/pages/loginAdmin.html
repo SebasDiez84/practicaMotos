@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!--Importación de stilos css-->
+  <link href="../css/loginAdmin.css" rel="stylesheet" type="text/css" />
+  <!-- Importación de bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Aqui se nombra a la pagina al lado izquierdo del menú-->
+        <a class="navbar-brand" href="#">Taller De Motos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--Comienza la lista del menú-->
+          <ul class="navbar-nav mr-auto">
+    
+            <!--Enlace de la pagina de RegistroUsuarios-Index, Current significa que es el elemento especial(Segun entiendo para decir que estas en esta pagina)-->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Registro Usuarios </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Motos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="loginAdmin.html">Asignacion<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mantenimiento.html">Manteniniento</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+
+
+
+    <div class="contenedorPadre">
+        <div class="container">
+            <div class="row text-center login-page">
+                <div class="col-md-12 login-form">
+                    <form action="claseDestino.php" method="post"> 			
+                        <div class="row">
+                            <div class="col-md-12 login-form-header">
+                                <p class="login-form-font-header">Ingreso<span>Administrador</span><p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 login-from-row">
+                                <input name="usuario" type="text" placeholder="Usuario" required/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 login-from-row">
+                                <input name="password" type="password" placeholder="Contraseña" required/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 login-from-row">
+                                <button class="btn btn-info">Entrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+  <footer>
+    <div class="footer-container">
+        <center>
+            <h3>Desarrollador</h3>
+            <hr>
+            <div class="footer-main">
+                <div class="footer-columna">
+                    <h5>Sebastián Díez Vallejo</h5>
+                    <span class="fa fa-phone">
+                        <p>(+57) 3234729383</p>
+                    </span>
+                    <span class="fa fa-envelope">
+                        <p>sebasdiez84@Gmail.com</p>
+                    </span>
+                </div>
+            </div> 
+        </center>
+    </div>
+</footer>	
+
+</body>
+</html>

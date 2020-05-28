@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asignacion</title>
+    <!--Importación de stilos css-->
+  <link href="../css/index.css" rel="stylesheet" type="text/css" />
+  <!-- Importación de bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Aqui se nombra a la pagina al lado izquierdo del menú-->
+        <a class="navbar-brand" href="#">Taller De Motos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--Comienza la lista del menú-->
+          <ul class="navbar-nav mr-auto">
+    
+            <!--Enlace de la pagina de inicio-Index, Current significa que es el elemento especial(Segun entiendo para decir que estas en esta pagina)-->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Registro de Usuarios </a>
+            </li>
+            <!--link sencillo para pagina motos-->
+            <li class="nav-item">
+              <a class="nav-link" href="motos.html">Motos</a>
+            </li>
+            <!--link sencillo para pagina motos-->
+            <li class="nav-item">
+                <a class="nav-link" href="asignacion.html">Asignacion<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mantenimiento.html">Manteniniento</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!--Titulo de inicio de sesion-->
+    <center>
+      <h1 style=" margin-top: 20px;">Asignar Moto </h1>
+  </center>
+  <hr>
+  <div class="contenedor">
+      <form id="registro" style="margin-top: 10px;">
+          <div class="form-group">
+              <center>
+                  <label for="id_mecanico">Cedula Mecanico</label>
+              </center>
+              <input type="number" class="form-control" id="id_mecanico" required>
+          </div>
+          <div class="form-group">
+              <center>
+                  <label for="nombre_mecanico">Nombre</label>
+              </center>
+              <input type="text" class="form-control" id="nombre_mecanico" disabled>
+          </div>
+          <div class="form-group">
+              <center>
+                  <label for="apellido_mecanico">Apellido</label>
+              </center>
+              <input type="text" class="form-control" id="apellido_mecanico" disabled>
+          </div>
+          <div class="form-group">
+              <center>
+                  <label for="placa">Moto</label>
+              </center>
+              <select class="form-control" id="placa" required>
+                  
+              </select>
+          </div>
+          <center>
+              <button id="botonProgramarMantenimiento" type="submit" class="btn btn-primary">Programar Mantenimiento</button>
+          </center>
+        </form>
+  </div>
+
+  <div class="contenedorTabla">
+     <table class="table">
+         <!--Titulo de la tabla-->
+         <thead class="thead-dark">
+             <tr>
+                 <th scope="col">Mecanico</th>
+                 <th scope="col">Placa</th>
+                 <th scope="col">Fecha</th>
+                 <th scope="col">Trabajos_Realizados</th>
+                 <th scope="col">Horas_invertidas</th>
+                 <th scope="col">Acciones</th>
+             </tr>
+         </thead>
+         <tbody>
+             <!--Dato quemado-->
+             <tr>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th></th>
+                 <th><button type="button" class="btn btn-primary">Modificar</button> </th>
+              </tr>
+         </tbody>
+     </table>
+  </div>
+     
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <center>
+                <h3>Desarrollador</h3>
+                <hr>
+                <div class="footer-main">
+                    <div class="footer-columna">
+                        <h5>Sebastián Díez Vallejo</h5>
+                        <span class="fa fa-phone">
+                            <p>(+57) 3234729383</p>
+                        </span>
+                        <span class="fa fa-envelope">
+                            <p>sebasdiez84@Gmail.com</p>
+                        </span>
+                    </div>
+                </div> 
+            </center>
+        </div>
+    </footer>	
+
+
+
+    <!-- Importación Jquery-->
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de motos</title>
+    <!--Importación de stilos css-->
+  <link href="../css/index.css" rel="stylesheet" type="text/css" />
+  <!-- Importación de bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!--Aqui se nombra a la pagina al lado izquierdo del menú-->
+        <a class="navbar-brand" href="#">Taller De Motos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!--Comienza la lista del menú-->
+          <ul class="navbar-nav mr-auto">
+    
+            <!--Enlace de la pagina de inicio-Index, Current significa que es el elemento especial(Segun entiendo para decir que estas en esta pagina)-->
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Registro Usuarios </a>
+            </li>
+            <!--link sencillo para pagina motos-->
+            <li class="nav-item">
+              <a class="nav-link" href="">Motos<span class="sr-only">(current)</span></a>
+            </li>
+            <!--link sencillo para pagina motos-->
+            <li class="nav-item">
+                <a class="nav-link" href="loginAdmin.html">Asignacion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mantenimiento.html">Manteniniento</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <center>
+      <h1 style=" margin-top: 20px;">Registro ingreso moto </h1>
+  </center>
+  <hr>
+
+    <div class="contenedor">
+      <form id="registro" style="margin-top: 10px;">
+        <div class="form-group">
+          <center>
+              <label for="placa">Placa</label>
+          </center>
+          <input type="text" class="form-control" id="placa" required>
+      </div>
+        <div class="form-group">
+            <center>
+                <label for="estado">Estado</label>
+            </center>
+            <input type="text" class="form-control" id="estado" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="clase">Clase</label>
+            </center>
+            <input type="text" class="form-control" id="clase" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="marca">Marca</label>
+            </center>
+            <input type="text" class="form-control" id="marca" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="modelo">Modelo</label>
+            </center>
+            <input type="text" class="form-control" id="modelo" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="color">Color</label>
+            </center>
+            <input type="text" class="form-control" id="color" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="cilindraje">Cilindraje</label>
+            </center>
+            <input type="number" class="form-control" id="cilindraje" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="documento_propietario">Documento Propietario</label>
+            </center>
+            <input type="number" class="form-control" id="documento_propietario" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="soat">Numero del SOAT</label>
+            </center>
+            <input type="text" class="form-control" id="soat" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="vencimientoSoat">Vencimiento del SOAT</label>
+            </center>
+            <input type="date" class="form-control" id="vencimientoSoat" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="tecno">Numero de la tecnomecanica</label>
+            </center>
+            <input type="text" class="form-control" id="tecno" required>
+        </div>
+        <div class="form-group">
+            <center>
+                <label for="venTecno">Vencimiento de la tecnomecanica</label>
+            </center>
+            <input type="date" class="form-control" id="venTecno" required>
+        </div>
+        <center>
+            <button id="botonRegistrarMotos" type="submit" class="btn btn-primary">Registrar moto</button>
+        </center>
+      </form>
+    </div>
+    <div class="contenedorTabla">
+      <table class="table">
+          <!--Titulo de la tabla-->
+          <thead class="thead-dark">
+              <tr>
+                  <th scope="col">Placa</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Clase</th>
+                  <th scope="col">Marca</th>
+                  <th scope="col">Modelo</th>
+                  <th scope="col">Color</th>
+                  <th scope="col">Cilindraje</th>
+                  <th scope="col">Documento Propietario</th>
+                  <th scope="col">Numero del SOAT</th>
+                  <th scope="col">Vencimiento del SOAT</th>
+                  <th scope="col">Numero de la tecnomecanica</th>
+                  <th scope="col">Vencimiento de la tecnomecanica</th>
+                  <th scope="col">Acciones</th>
+
+              </tr>
+          </thead>
+          <tbody>
+              <!--Dato quemado-->
+              <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th><button type="button" class="btn btn-primary">Actualizar</button> </th>
+               </tr>
+          </tbody>
+      </table>
+   </div>
+
+
+    <footer>
+        <div class="footer-container">
+            <center>
+                <h3>Desarrollador</h3>
+                <hr>
+                <div class="footer-main">
+                    <div class="footer-columna">
+                        <h5>Sebastián Díez Vallejo</h5>
+                        <span class="fa fa-phone">
+                            <p>(+57) 3234729383</p>
+                        </span>
+                        <span class="fa fa-envelope">
+                            <p>sebasdiez84@Gmail.com</p>
+                        </span>
+                    </div>
+                </div> 
+            </center>
+        </div>
+    </footer>	
+    <!-- Importación Jquery-->
+    <script src=" https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
